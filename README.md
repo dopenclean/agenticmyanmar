@@ -15,8 +15,8 @@ Machine Learning Course ကြီးမဟုတ်တဲ့အတွက် .. F
 ဒါကြောင့် ......
 
 ## Requirements
-- **Python programming basic** (or) intermediate knowledge ရှိထားဖို့လိုပါတယ်
-အများကြီးမဟုတ်ပါဘူး .. data typeတွေဖြစ်တဲ့ string, int, float, Boolean, list, dict တွေနဲ့ 
+- **Python programming basic** (or) **intermediate knowledge** ရှိထားဖို့လိုပါတယ်
+အများကြီးမဟုတ်ပါဘူး .. data typeတွေဖြစ်တဲ့ string, int, float, boolean, list, dictတွေ, file read, writeနဲ့ 
 api, sdk နဲ့ ပတ်သက်တဲ့ coding အနည်းအကျဥ်းရေးဖူးတဲ့ အတွေ့အကြုံလေးရှိရင်ရပါပြီ 
 - **Cost**: Frontier model တွေဖြစ်တဲ့ GPT models, DeepSeek, Claude တွေကို အသုံးချမှာဖြစ်တာမို့
 openai, claude အစရှိတဲ့ platformတွေမှာ apiဖိုး အနည်းငယ်ကုန်ကျမှာပါ ထန်ကုန် 5$ လောက်ပါပဲ.. 
@@ -38,4 +38,4 @@ Trae က ပထမတစ်လ subscription ကို 3$ ပဲယူပါတ�
 
 
 ## Course Content
-<a href="./1_Context_Chaining/README.md">1. Context Chaining</a>
+### <a href="./1_Context_Chaining/README.md">1. Context Chaining</a>
