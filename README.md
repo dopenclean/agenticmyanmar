@@ -10,7 +10,7 @@ Machine Learning Course ကြီးမဟုတ်တဲ့အတွက် .. F
 
 
 ## Caution
-ဒီ course သည် prompt တွေရိုက်ထုတ်ပြီး မြန်မြန်ဆန်ဆန်ကိုယ်ဖြစ်ချင်တာကို ဖန်တီးမယ့် vibe coding courseပဲ<br>
+ဒီ course သည် prompt တွေရိုက်ထုတ်ပြီး မြန်မြန်ဆန်ဆန်ကိုယ်ဖြစ်ချင်တာကို ဖန်တီးမယ့် vibe coding courseမဟုတ်ပဲ<br>
  Practical Exercise တွေလုပ်ရင်း Agentic Conceptတွေကို သေသေချာချာ လေ့လာရမယ့် သင်ခန်းစာတွေဖြစ်ပါတယ်<br>
 **ဒါကြောင့် ......**
 
