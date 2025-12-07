@@ -122,17 +122,12 @@ duration_1 = end_time_1 - start_time_1
 ![Example](img2.png)
 
 ### 5. Second Link in the Chain (Analysis & Solution)
-**This is the core of Context Chaining.**
-- Note the usage of `response1` inside `question2`.
-- We are explicitly feeding the *previous output* into the *current prompt*.
-- The model is asked to "Read the {response1}" and find pain points.
-- This creates a dependency: Step 2 cannot exist without the context provided by Step 1.
-
+**Context Chaining ရဲ့ အရေးအကြီးဆုံးအပိုင်း**
 ```python
 # --- Second API call ---
 start_time_2 = time.time()
 
-question2 = f"Read the {response1} and search for the pain point in that industry and solve with something challenging that might be ripe for Agentic AI solution."
+question2 = f"Read the idea below and search for the pain point in that industry and solve with something challenging that might be ripe for solution. {response1}"
 
 message_params2 = [{
     "role": "user",
@@ -144,14 +139,18 @@ response2 = openai.chat.completions.create(
     messages=message_params2
 ).choices[0].message.content
 
-with open("output/pain_point_&_solution.txt", "w", encoding="utf-8") as file:
+with open("pain_point_&_solution.txt", "w", encoding="utf-8") as file:
     file.write(response2)
     print("done finding solution")
 ```
+- First API call ကရလာတဲ့ `response1`ကို `question2`ထဲကိုထည့်လိုက်ပါတယ်
+- `question2` အဓိပ္ပါယ်ကတော့ ရလာတဲ့ business ideaမှာ ဘယ်ဟာက problem ဖြစ်ပြီး ဒီအတွက် ဘာက solution ဖြစ်မလဲဆိုတာအဖြေထုတ်ခိုင်းတာပါ
+- code run ပြီးဖတ်ကြည့်လိုက်ရင် ပိုရှင်းသွားပါလိမ့်မယ်
+- ပထမ API call မှာ idea ထုတ်ခိုင်းတယ် ၊  အခု API callမှာ အဲ့ ideaကို အသုံးပြုပြီး pain point နဲ့ solution ကိုဆက်ထုတ်ခိုင်းတာပါ
+- Example(pain_point_&_solution.txt):
+![Example](img3.png)
 
 ### 6. Performance Metrics
-Finally, we calculate and print how long each step took. This is vital for production agents where latency matters. It helps identify which link in the chain is the bottleneck.
-
 ```python
 # --- Results Output ---
 total_duration = duration_1 + duration_2
@@ -161,3 +160,10 @@ print(f"first_call: {duration_1:.2f} seconds")
 print(f"second_call: {duration_2:.2f} seconds")
 print(f"Total Combined Duration: {total_duration:.2f} seconds")
 ```
+- ဒါက အပို အပိုင်းလေးပါ
+- ကြာချိန်ကို တွက်ထားတာဖြစ်ပါတယ်
+- model တွေရဲ့ စွမ်းဆောင်ရည်မတူတဲ့အတွက် ဘယ် modelက အချိန်ဘယ်လောက်ယူမလဲဆိုတာ<br>ပျှမ်းမျှအားဖြင့်သိသွားစေပါတယ်
+- ဒါကြောင့် ကိုယ်က မြန်မြန်သုံးချင်ရင် ဘယ် model,<br>
+အချိန်ကုန်ရင် ကုန်ပါစေ .. ပိုပြီး reasoning ဖြစ်ချင်ရင် ဘယ် modelအစရှိသဖြင့် သိသွားစေမှာပါ
+
+## [Back to Menu](README.md)
