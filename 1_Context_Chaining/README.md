@@ -1,27 +1,53 @@
 # Context Chaining
+[Full code:](context_chaining.py)
 
 ## Purpose
-The purpose of this lesson is to demonstrate the fundamental concept of **Context Chaining** in Agentic AI. It illustrates how to connect multiple AI interactions into a coherent sequence, where the output of one step becomes the input (context) for the next. This mimics a thought process or a workflow.
+**Context Chaining** fundmental concept ဖြစ်ပါတယ်
+*Context*: မြန်မာလို 'စကားစပ်'လို့ အဓိပ္ပာယ်ရပါတယ်
+မိမိနဲ့ လူတစ်ယောက် အကြောင်းအရာတစ်ခုကို ဆွေးနွေးနေတယ်ဆိုပါစို့
+ဥပမာ "ဆီကားတွေက ဘယ်လိုကောင်းကြောင်း EV တွေကလည်း ဘယ်လိုကောင်းကြောင်း" တစ်ယောက်နဲ့ တစ်ယောက် ဆွေးနွေးပြောဆိုနေကြတယ်ဆိုပါတော့
+မိမိက ဒီအကြောင်းအရာကို ပြောပြီးတဲ့အချိန် တစ်ဖက်လူကလည်း ဒီအကြောင်းအရာနဲ့ ဆက်စပ်တဲ့ စကားကိုပဲပြန်ပြောမှာဖြစ်ပါတယ်
+တစ်ဖက်လူက "EV ကားတွေကတော့ နောင်တစ်ချိန်မှာ တော်တော်အသုံးများလာမှာကွ"လို့ပြောလိုက်တဲ့အချိန်မှာ မိမိက "ငါဒီနေ့ ငါးဟင်းနဲ့ ထမင်းစားပြီးပြီ"လို့ ပြောလိုက်ရင် တစ်ဖက်လူက ကြောင်သွားမှာပေ့ါ
+အဲ့ဒါကို စကားအစပ်အဆက်လွတ်သွားတယ်လို့ခေါ်ပါတယ်
+တစ်ဖက်က "EV ကား" အကြောင်းပြောနေတဲ့အချိန် ကိုယ်ကလည်း အဲ့ဒါနဲ့ဆက်စပ်တဲ့ စကားကိုပြန်ပြောရမှာဖြစ်ပါတယ် 
+ဒါကိုပဲ 'Context' လို့ သုံးနှုန်းတာဖြစ်ပါတယ်
+
 
 ## Use Case
+ဒီသင်ခန်းစာမှာတော့ AI တွေနဲ့ မိမိ(programming အရ)စကားပြောဆိုတဲ့အခါမှာ စကားအဆက်အစပ် မလွတ်သွားအောင် (အဆက်အစပ်ရှိနေအောင်) ဘယ်လို လက်ဆင့်ကမ်းသွားရမလဲဆိုတာ လေ့လာရမယ့် basic သင်ခန်းစာတစ်ခုဖြစ်ပါတယ်
+
+Essential Lesson တစ်ခုဖြစ်လို့ ကျော်လို့မရပါဘူး
+Complex Agent တွေရဲ့ First step တစ်ခုလို့ပြောလည်းမမှားပါဘူး
 This pattern is essential for building complex agents that need to:
-- **Refine Ideas**: Generate a broad concept first, then critique or detail it in a subsequent step.
-- **Process Data**: Extract information in step one, then format or summarize it in step two.
-- **Plan and Execute**: Create a plan, then generate the code or content to execute that plan.
 
 ## Why We Use It
-A single prompt is often insufficient for complex tasks. It can become too long, confusing for the model, or yield inconsistent results. **Chaining** breaks the problem down into manageable steps, allowing for:
-- Better accuracy and focus at each stage.
-- The ability to inspect intermediate results (like saving the business idea before finding pain points).
-- Modular design where steps can be tweaked independently.
-
+- prompt တစ်ခုတည်းနဲ့ မလုံလောက်တဲ့အခါ (သို့မဟုတ်) ရလာတဲ့ resultကို တဖန်စစ်ထုတ်ချင်တဲ့အခါ(filtering) တွေမှာ သုံးတာဖြစ်ပါတယ်
+- (တစ်နည်း) အရမ်းကောင်းမွန်တိကျတဲ့ အဖြေတစ်ခုကိုလိုချင်တဲ့အချိန်မှာလည်းသုံးနိုင်ပါတယ်
+- (တစ်နည်း) ပြဿနာတစ်ခုကို ရှာခိုင်းပြီး ထိုပြဿနာကို ထပ်မံ ဖြေရှင်းခိုင်းတဲ့အခါမှာလည်းသုံးပါတယ်
+- and so on...
 ---
+
+## Set ENV
+Code ကို runနိုင်ဖို့အတွက် ပထမဦးဆုံး Environment setup လုပ်ထားဖို့လိုအပ်ပါတယ်
+
+**Step 1: Create a `.env` file**
+Project folder ထဲမှာ `.env` ဆိုတဲ့ file name နဲ့ file အသစ်တစ်ခုဆောက်ပါ
+(windows မှာဆိုရင် new text file ယူပြီး `.env` လို့ rename ပေးလိုက်ပါ)
+
+**Step 2: Add your OpenAI API Key**
+`.env` file ထဲမှာ အောက်ပါအတိုင်း မိမိရဲ့ OpenAI API key ကိုထည့်ပါ
+
+```env
+OPENAI_API_KEY=sk-proj-xxxxxxxxxxxxxxxxxxxxxxxx
+```
+
+> **Note**: `sk-proj-xxxxxxxxxxxxxxxxxxxxxxxx` နေရာမှာ မိမိရဲ့ ကိုယ်ပိုင် API key ကို [OpenAI Platform](https://platform.openai.com/api-keys) ကနေ copy ယူပြီး ထည့်ပေးရမှာဖြစ်ပါတယ်
+
+
 
 ## Code Explanation
 
 ### 1. Imports and Setup
-We start by importing necessary libraries. `dotenv` is used to securely load API keys, `os` for environment variables, `OpenAI` for the client, and `time` to track performance.
-
 ```python
 from dotenv import load_dotenv
 import os
