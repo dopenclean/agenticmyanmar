@@ -1,1 +1,6 @@
-markdown: kramdown
+# Source - https://stackoverflow.com/a
+# Posted by Ben Souchet
+# Retrieved 2025-12-08, License - CC BY-SA 4.0
+
+kramdown:
+  input: Kramdown
