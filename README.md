@@ -1,4 +1,4 @@
-# AI Agent and MCP Course for Myanmar 🇲🇲
+# AI Agent and MCP Course in Myanmar 🇲🇲
 
 ပထမဦးစွာ .. ဒီ course သည် AI Engineering နဲ့ပတ်သက်ပြီး အစကနေ develop လုပ်ပုံကအစ
 business landscape အဆုံး အသေအချာပြုစုထားတဲ့ လေ့လာစရာနေရာတစ်ခုဖြစ်ပါတယ်
@@ -37,4 +37,4 @@ Trae က ပထမတစ်လ subscription ကို 3$ ပဲယူပါတ�
 
 
 ## Course Content
-[Context Chaining](./1_Context_Chaining/README.md){:target="_blank" rel="noopener noreferrer"}
+<a href="./1_Context_Chaining/README.md" target="_blank" rel="noopener noreferrer">Context Chaining</a>
