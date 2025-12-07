@@ -28,8 +28,8 @@ Trae က ပထမတစ်လ subscription ကို 3$ ပဲယူပါတ�
 - ဖော်ပြပါ ကုန်ကျစရိတ်တွေက လေ့လာမယ့် မိမိအတွက်သာဖြစ်ပါတယ် .. 
 - ကုန်ကျစရိတ်ထက် ဒီ Course ကိုလိုက်လုပ်ပြီး ပြန်ရမယ့် အသိက ပိုတန်မယ်လို့ အာမခံပါတယ်
 
-## System Setup
-- AI IDE (Cursor or TRAE) <must>နှင့်
+## System Setup with download links
+- AI IDE ([Cursor](https://cursor.com/download) or [TRAE](https://trae.ai/)) နှင့်<br>
 အောက်ဖော်ပြပါထဲက တစ်မျိုးရှိရင်ရပါပြီ <All Free>
 - [Jupyter Notebook](https://www.anaconda.com/download)
 - [PyCharm (Community Edition)](https://www.jetbrains.com/pycharm/download/?section=windows)
