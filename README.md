@@ -10,9 +10,9 @@ Machine Learning Course ကြီးမဟုတ်တဲ့အတွက် .. F
 
 
 ## Caution
-ဒီ course သည် prompt တွေရိုက်ထုတ်ပြီး မြန်မြန်ဆန်ဆန်ကိုယ်ဖြစ်ချင်တာကို ဖန်တီးမယ့် vibe coding course မဟုတ်ပါ
- Practical Exercise တွေလုပ်ရင်း Agentic Conceptတွေကို ခေါင်းထဲရိုက်သွင်းမယ့် basic က စတဲ့ သင်ခန်းစာတွေဖြစ်ပါတယ်
-ဒါကြောင့် ......
+ဒီ course သည် prompt တွေရိုက်ထုတ်ပြီး မြန်မြန်ဆန်ဆန်ကိုယ်ဖြစ်ချင်တာကို ဖန်တီးမယ့် vibe coding courseပဲ<br>
+ Practical Exercise တွေလုပ်ရင်း Agentic Conceptတွေကို သေသေချာချာ လေ့လာရမယ့် သင်ခန်းစာတွေဖြစ်ပါတယ်<br>
+**ဒါကြောင့် ......**
 
 ## Requirements
 - **Python programming basic** (or) **intermediate knowledge** ရှိထားဖို့လိုပါတယ်
@@ -38,4 +38,4 @@ Trae က ပထမတစ်လ subscription ကို 3$ ပဲယူပါတ�
 
 
 ## Course Content
-### <a href="./1_Context_Chaining/README.md">1. Context Chaining</a>
+<a href="./1_Context_Chaining/README.md">1. Context Chaining</a>
