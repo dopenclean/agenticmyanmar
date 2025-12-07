@@ -36,7 +36,7 @@ Trae က ပထမတစ်လ subscription ကို 3$ ပဲယူပါတ�
 ## System Setup with download links
 - AI IDE ([Cursor](https://cursor.com/download) or [TRAE](https://trae.ai/)) နှင့်<br>
 အောက်ဖော်ပြပါထဲက တစ်မျိုးရှိရင်ရပါပြီ <All Free>
-- [Jupyter Notebook](https://www.anaconda.com/download)
+- [Jupyter Notebook](https://www.anaconda.com/download) (Recommended)
 - [PyCharm (Community Edition)](https://www.jetbrains.com/pycharm/download/?section=windows)
 - (or Any other python environment)
 
