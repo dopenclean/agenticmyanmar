@@ -21,9 +21,10 @@ Machine Learning Course ကြီးမဟုတ်တဲ့အတွက် .. F
 - **Python programming basic** (or) **intermediate knowledge** ရှိထားဖို့လိုပါတယ်
 အများကြီးမဟုတ်ပါဘူး .. data typeတွေဖြစ်တဲ့ string, int, float, boolean, list, dictတွေ, file read, writeနဲ့ 
 api, sdk နဲ့ ပတ်သက်တဲ့ coding အနည်းအကျဥ်းရေးဖူးတဲ့ အတွေ့အကြုံလေးရှိရင်ရပါပြီ 
-- **Cost**: Frontier model တွေဖြစ်တဲ့ GPT models, DeepSeek, Claude တွေကို အသုံးချမှာဖြစ်တာမို့
-openai, claude အစရှိတဲ့ platformတွေမှာ apiဖိုး အနည်းငယ်ကုန်ကျမှာပါ ထန်ကုန် 5$ လောက်ပါပဲ.. 
-optional choice ဖြစ်လို့  မိမိဘာမိမိ Ollama မှာ setup လုပ်ပြီး locally run ချင်လည်းဖြစ်ပါတယ် 
+- **Cost**: Frontier model တွေဖြစ်တဲ့ GPTs, DeepSeek, Claude, Gemini တွေကို အသုံးချမှာဖြစ်တာမို့
+openai, anthropic, google အစရှိတဲ့ platformတွေမှာ apiဖိုး အနည်းငယ်ကုန်ကျမှာပါ<br>ထန်ကုန် 5$ to 10$ လောက်ပါပဲ.. (still optional)<br>
+မိမိသုံးချင်တဲ့ platformမှာပဲရွေးပြီးသုံးလဲ ဖြစ်ပါတယ်<br>
+မိမိဘာမိမိ Ollama မှာ setup လုပ်ပြီး locally run ချင်လည်းဖြစ်ပါတယ် 
 - **Cursor**: ဖြစ်နိုင်ရင် Cursor subscription 20$ pro plan ရှိထားရင်အကောင်းဆုံးပါပဲ
 ရှိဖို့လိုအပ်တယ်လို့ မပြောလိုပေမယ့် Frontier modelတွေကို လိုသလို access လုပ်နိုင်ဖို့အတွက် option တစ်ခုဖြစ်ပါတယ်
 cursor အတွက် Financially အရ အဆင်မပြေဘူးဆိုရင် **Trae AI IDE**ကိုလည်းသုံးနိုင်ပါတယ်
@@ -38,6 +39,8 @@ Trae က ပထမတစ်လ subscription ကို 3$ ပဲယူပါတ�
 - [Jupyter Notebook](https://www.anaconda.com/download)
 - [PyCharm (Community Edition)](https://www.jetbrains.com/pycharm/download/?section=windows)
 - (or Any other python environment)
+<br>Jupyter Notebook(.ipynb)က cellတစ်ခုချင်း runရတာဖြစ်ပြီး step by stepသွားချင်ရင်ပိုအဆင်ပြေပါတယ်
+<br>PyCharmထဲမှာ `.py` file သီးသန့်သုံးရင်တော့ scriptကြီးတစ်ခုလုံး run ချလိုက်ရတာဖြစ်လို့ နည်းနည်းကသိကအောက်ဖြစ်နေနိုင်ပါတယ်
 
 
 ## Course Content
