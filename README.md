@@ -39,8 +39,8 @@ Trae က ပထမတစ်လ subscription ကို 3$ ပဲယူပါတ�
 - [Jupyter Notebook](https://www.anaconda.com/download)
 - [PyCharm (Community Edition)](https://www.jetbrains.com/pycharm/download/?section=windows)
 - (or Any other python environment)
-<br>Jupyter Notebook(.ipynb)က cellတစ်ခုချင်း runရတာဖြစ်ပြီး step by stepသွားချင်ရင်ပိုအဆင်ပြေပါတယ်
-<br>PyCharmထဲမှာ `.py` file သီးသန့်သုံးရင်တော့ scriptကြီးတစ်ခုလုံး run ချလိုက်ရတာဖြစ်လို့ နည်းနည်းကသိကအောက်ဖြစ်နေနိုင်ပါတယ်
+<br>Jupyter Notebook(.ipynb)က cellတစ်ခုချင်း runရတာဖြစ်ပြီး step by stepသွားတာ ပိုအဆင်ပြေပါတယ်
+<br>PyCharmထဲမှာ `.py` file သီးသန့်သုံးရင်တော့ scriptကြီးတစ်ခုလုံး run ချလိုက်ရတာဖြစ်လို့ နည်းနည်းကသိကအောက်ဖြစ်နေနိုင်ပါတယ်<br>PyCharmမှာက ipynb ကိုသုံးမယ်ဆို Pro Plan ဝယ်ရတာမို့လို့ပါ<br>PyCharm ကိုသေချာသုံးဖူးတယ်ဆိုရင်တော့ အဆင်ပြေမှာပါ
 
 
 ## Course Content
