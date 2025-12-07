@@ -166,4 +166,4 @@ print(f"Total Combined Duration: {total_duration:.2f} seconds")
 - ဒါကြောင့် ကိုယ်က မြန်မြန်သုံးချင်ရင် ဘယ် model,<br>
 အချိန်ကုန်ရင် ကုန်ပါစေ .. ပိုပြီး reasoning ဖြစ်ချင်ရင် ဘယ် modelအစရှိသဖြင့် သိသွားစေမှာပါ
 
-## [Back to Menu](README.md)
+## [Back to Menu](../README.md)
