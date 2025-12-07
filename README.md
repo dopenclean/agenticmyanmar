@@ -1,4 +1,4 @@
-# AI Agent and MCP track for Myanmar
+# AI Agent and MCP Course for Myanmar 🇲🇲
 
 ပထမဦးစွာ .. ဒီ course သည် AI Engineering နဲ့ပတ်သက်ပြီး အစကနေ develop လုပ်ပုံကအစ
 business landscape အဆုံး အသေအချာပြုစုထားတဲ့ လေ့လာစရာနေရာတစ်ခုဖြစ်ပါတယ်
