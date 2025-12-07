@@ -64,8 +64,6 @@ openai_api_key = os.getenv("OPENAI_API_KEY")
 - **time**: ကိုယ်သုံးလိုက်တဲ့ model တစ်ခုဘယ်လောက်ကြာသလဲ timerမှတ်ဖို့အတွက်ပါ
 
 ### 2. Environment Verification
-This block checks if the API key is successfully loaded. It prints a masked version of the key to confirm presence without exposing the full secret, which is a good security practice.
-
 ```python
 if openai_api_key:
     print(f"YEAH, API KEY FOUND START WITH '{openai_api_key[:8]}'")
@@ -74,18 +72,15 @@ else:
 
 openai = OpenAI()
 ```
+- **api key** ရှိနေလားစစ်ပေးတဲ့ code block ပါ
+- `openai_api_key[:8]`: Key ရှိနေခဲ့ရင် ပထမဆုံး ရှစ်လုံးကို printထုတ်ပေးတာဖြစ်ပါတယ်
 
 ### 3. First Link in the Chain (Idea Generation)
-Here we execute the first step of our chain.
-- We define a task: "Pick a business idea in web3".
-- We send this to the model (`gpt-5-nano` is used here as an example placeholder for a high-capability model).
-- The result (`response1`) contains the raw business idea.
-
 ```python
 # --- First API call and File Write ---
 start_time_1 = time.time() 
 
-question1 = "Pick a business idea in web3 (crypto) that might be worth exploring for an Agentic AI opportunity."
+question1 = "Pick a business idea that might be worth exploring in Myanmar."
 
 message_params = [{
     "role": "user",
@@ -97,10 +92,22 @@ response1 = openai.chat.completions.create(
     messages=message_params
 ).choices[0].message.content
 ```
+**__First API call and File Write__**<br> 
+- ပထမဆုံး API call
+- question ဆိုတဲ့ မေးချင်တဲ့မေးခွန်းပါမယ်
+- api call ဖို့အတွက် required* parametersတွေထည့်ပေးရပါမယ်<br>
+parameters ထဲက keyဖြစ်တဲ့ `role`အတွက် value နေရာမှာ openai က သတ်မှတ်ထားတဲ့ fixed string ထည့်ရမှာပါ<br>
+example:
+![Role Value](img1.png)
+- sdk ကနေ သုံးတာဖြစ်တဲ့အတွက် base_url မပါလာပါဘူး<br>
+`openai.chat.completions.create`က url `https://api.openai.com/v1/chat/completions` ကို connect လုပ်ပေးထားတာဖြစ်ပါတယ်<br>
+- `question`: မြန်မာနိုင်ငံမှာ ဘယ်လိုစီးပွားလုပ်တာအဆင်ပြေမလဲလို့ မေးထားတာဖြစ်ပါတယ်
+- `model`: ကြိုက်တဲ့ modelကိုကြိုက်သလို ယှဥ်ပြီးသုံးကြည့်လို့ရပါတယ်<br>
+model parameters တွေကို [ဒီမှာ](https://platform.openai.com/docs/pricing)ကြည့်ပါ
+- `choices[0].message.content`: api response က jsonနဲ့လာတာဖြစ်ပြီး အနည်းငယ်ရှုပ်ပါတယ် .. အဲ့ responseထဲကမှ gpt-5-nano reply ပြန်လာတဲ့ စာပိုဒ် သီးသန့်ကိုပဲ ပြန်ယူထားတာပါ<br>အကျယ်ကြည့်ချင်ရင် `print(choices)`လို့ ကြည့်နိုင်ပါတယ်
+
 
 ### 4. Saving Intermediate State
-We save the output of the first step to a file. This is crucial for debugging and auditing agent flows. It allows you to see exactly what the first agent produced before the second agent takes over.
-
 ```python
 with open("output/business_idea.txt", "w", encoding="utf-8") as file:
     file.write(response1)
@@ -109,6 +116,7 @@ with open("output/business_idea.txt", "w", encoding="utf-8") as file:
 end_time_1 = time.time()
 duration_1 = end_time_1 - start_time_1
 ```
+- ရလာတဲ့ result ကို file တစ်ခုအဖြစ်ထုတ်ပြီး သိမ်းထားတာဖြစ်ပါတယ်
 
 ### 5. Second Link in the Chain (Analysis & Solution)
 **This is the core of Context Chaining.**

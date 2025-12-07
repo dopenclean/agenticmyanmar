@@ -37,4 +37,4 @@ Trae က ပထမတစ်လ subscription ကို 3$ ပဲယူပါတ�
 
 
 ## Course Content
-<a href="./1_Context_Chaining/README.md">Context Chaining</a>
+<a href="./1_Context_Chaining/README.md">1. Context Chaining</a>
