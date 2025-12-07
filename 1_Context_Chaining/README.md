@@ -11,6 +11,7 @@
 အဲ့ဒါကို စကားအဆက်အစပ်လွတ်သွားတယ်လို့ခေါ်ပါတယ်
 တစ်ဖက်က "EV ကား" အကြောင်းပြောနေတဲ့အချိန် ကိုယ်ကလည်း အဲ့ဒါနဲ့ဆက်စပ်တဲ့ စကားကိုပြန်ပြောရမှာဖြစ်ပါတယ်<br>
 ဒါကိုပဲ 'Context' လို့ သုံးနှုန်းတာဖြစ်ပါတယ်<br>
+---
 
 
 ## Use Case
@@ -18,6 +19,7 @@
 
 Essential Lesson တစ်ခုဖြစ်လို့ ကျော်လို့မရပါဘူး<br>
 Complex Agent တွေရဲ့ First step တစ်ခုလို့ပြောလည်း မှန်ပါတယ်<br>
+---
 
 
 ## Why We Use It
@@ -25,8 +27,8 @@ Complex Agent တွေရဲ့ First step တစ်ခုလို့ပြေ
 - (တစ်နည်း) အရမ်းကောင်းမွန်တိကျတဲ့ အဖြေတစ်ခုကိုလိုချင်တဲ့အချိန်မှာလည်းသုံးနိုင်ပါတယ်
 - (တစ်နည်း) ပြဿနာတစ်ခုကို ရှာခိုင်းပြီး ထိုပြဿနာကို ထပ်မံ ဖြေရှင်းခိုင်းတဲ့အခါမှာလည်းသုံးပါတယ်
 - and so on...
----
 
+---
 ## Set ENV
 Code ကို runနိုင်ဖို့အတွက် ပထမဦးဆုံး Environment setup လုပ်ထားဖို့လိုအပ်ပါတယ်
 
@@ -63,6 +65,7 @@ openai_api_key = os.getenv("OPENAI_API_KEY")
 - **OpenAI**: OpenAI SDK နဲ့ API call အတွက် moduleဖြစ်ပါတယ်
 - **time**: ကိုယ်သုံးလိုက်တဲ့ model တစ်ခုဘယ်လောက်ကြာသလဲ timerမှတ်ဖို့အတွက်ပါ
 
+---
 ### 2. Environment Verification
 ```python
 if openai_api_key:
@@ -75,6 +78,7 @@ openai = OpenAI()
 - **api key** ရှိနေလားစစ်ပေးတဲ့ code block ပါ
 - `openai_api_key[:8]`: Key ရှိနေခဲ့ရင် ပထမဆုံး ရှစ်လုံးကို printထုတ်ပေးတာဖြစ်ပါတယ်
 
+---
 ### 3. First Link in the Chain (Idea Generation)
 ```python
 # --- First API call and File Write ---
@@ -106,7 +110,7 @@ example:
 model parameters တွေကို [ဒီမှာ](https://platform.openai.com/docs/pricing)ကြည့်ပါ
 - `choices[0].message.content`: api response က jsonနဲ့လာတာဖြစ်ပြီး အနည်းငယ်ရှုပ်ပါတယ် .. အဲ့ responseထဲကမှ gpt-5-nano reply ပြန်လာတဲ့ စာပိုဒ် သီးသန့်ကိုပဲ ပြန်ယူထားတာပါ<br>အကျယ်ကြည့်ချင်ရင် `print(choices)`လို့ ကြည့်နိုင်ပါတယ်
 
-
+---
 ### 4. Saving Intermediate State
 ```python
 with open("business_idea.txt", "w", encoding="utf-8") as file:
@@ -121,6 +125,7 @@ duration_1 = end_time_1 - start_time_1
 - Example(business_idea.txt):
 <img src="img2.png" alt="Example" width="700" />
 
+---
 ### 5. Second Link in the Chain (Analysis & Solution)
 **Context Chaining ရဲ့ အရေးအကြီးဆုံးအပိုင်း**
 ```python
@@ -150,6 +155,7 @@ with open("pain_point_&_solution.txt", "w", encoding="utf-8") as file:
 - Example(pain_point_&_solution.txt):
 <img src="img3.png" alt="Example" width="700" />
 
+---
 ### 6. Performance Metrics
 ```python
 # --- Results Output ---
@@ -165,5 +171,7 @@ print(f"Total Combined Duration: {total_duration:.2f} seconds")
 - model တွေရဲ့ စွမ်းဆောင်ရည်မတူတဲ့အတွက် ဘယ် modelက အချိန်ဘယ်လောက်ယူမလဲဆိုတာ<br>ပျှမ်းမျှအားဖြင့်သိသွားစေပါတယ်
 - ဒါကြောင့် ကိုယ်က မြန်မြန်သုံးချင်ရင် ဘယ် model,<br>
 အချိန်ကုန်ရင် ကုန်ပါစေ .. ပိုပြီး reasoning ဖြစ်ချင်ရင် ဘယ် modelအစရှိသဖြင့် သိသွားစေမှာပါ
+
+---
 
 ## [Back to Menu](../README.md)
