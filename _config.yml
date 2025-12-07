@@ -1,6 +1,0 @@
-markdown: kramdown
-kramdown:
-  input: GFM 
-  enable_coderay: false
-  parse_block_html: true 
-  parse_span_html: true

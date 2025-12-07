@@ -37,4 +37,4 @@ Trae က ပထမတစ်လ subscription ကို 3$ ပဲယူပါတ�
 
 
 ## Course Content
-[Context Chaining](./1_Context_Chaining/README.md){:target="_blank" rel="noopener noreferrer"}
+<a href="./1_Context_Chaining/README.md">Context Chaining</a>
