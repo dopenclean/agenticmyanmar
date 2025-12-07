@@ -80,7 +80,7 @@ openai = OpenAI()
 # --- First API call and File Write ---
 start_time_1 = time.time() 
 
-question1 = "Pick a business idea that might be worth exploring in Myanmar."
+question1 = "Pick a business idea that might be worth exploring in Myanmar. Explore deep dive step by step."
 
 message_params = [{
     "role": "user",
@@ -100,7 +100,7 @@ parameters ထဲက keyဖြစ်တဲ့ `role`အတွက် value နေ
 example:
 ![Role Value](img1.png)
 - sdk ကနေ သုံးတာဖြစ်တဲ့အတွက် base_url မပါလာပါဘူး<br>
-`openai.chat.completions.create`က url `https://api.openai.com/v1/chat/completions` ကို connect လုပ်ပေးထားတာဖြစ်ပါတယ်<br>
+`openai.chat.completions.create()`နဲ့ `https://api.openai.com/v1/chat/completions` connect လုပ်ပေးထားတာဖြစ်ပါတယ်<br>
 - `question`: မြန်မာနိုင်ငံမှာ ဘယ်လိုစီးပွားလုပ်တာအဆင်ပြေမလဲလို့ မေးထားတာဖြစ်ပါတယ်
 - `model`: ကြိုက်တဲ့ modelကိုကြိုက်သလို ယှဥ်ပြီးသုံးကြည့်လို့ရပါတယ်<br>
 model parameters တွေကို [ဒီမှာ](https://platform.openai.com/docs/pricing)ကြည့်ပါ
@@ -109,14 +109,17 @@ model parameters တွေကို [ဒီမှာ](https://platform.openai.co
 
 ### 4. Saving Intermediate State
 ```python
-with open("output/business_idea.txt", "w", encoding="utf-8") as file:
+with open("business_idea.txt", "w", encoding="utf-8") as file:
     file.write(response1)
     print("done finding business!\nProcessing to next answer...")
 
 end_time_1 = time.time()
 duration_1 = end_time_1 - start_time_1
 ```
-- ရလာတဲ့ result ကို file တစ်ခုအဖြစ်ထုတ်ပြီး သိမ်းထားတာဖြစ်ပါတယ်
+- ရလာတဲ့ result ကို text file တစ်ခုအဖြစ်ထုတ်ပြီး သိမ်းထားတာဖြစ်ပါတယ်
+- gpt-5-nano model ရဲ့ ကြာချိန်ကိုမှတ်ထားတဲ့ timerတစ်ခုလည်းပါပါတယ်
+- Example(business_idea.txt):
+![Example](img2.png)
 
 ### 5. Second Link in the Chain (Analysis & Solution)
 **This is the core of Context Chaining.**
