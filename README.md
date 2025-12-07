@@ -3,7 +3,7 @@
 ပထမဦးစွာ .. ဒီ course သည် AI Engineering နဲ့ပတ်သက်ပြီး အစကနေ develop လုပ်ပုံကအစ
 business landscape အဆုံး အသေအချာပြုစုထားတဲ့ လေ့လာစရာနေရာတစ်ခုဖြစ်ပါတယ်
 
-Machine Learning Course ကြီးတမဟုတ်တဲ့အတွက် .. Foundationကြီး တစ်ခုလုံးကနေ စတင်မှာတော့မဟုတ်ပါဘူး
+Machine Learning Course ကြီးမဟုတ်တဲ့အတွက် .. Foundationကြီး တစ်ခုလုံးကနေ စတင်မှာတော့မဟုတ်ပါဘူး
 သို့ပေမယ့် AI engineer trackကို မြန်မာလို သေသေချာချာလေ့လာချင်တဲ့ Myanmar Community အတွက် ရည်ရွယ်ပြီး ပြုစုထားတဲ့  course တစ်ခုဖြစ်ပါတယ်
 အစကနေ အဆုံး သေသေချာချာလေ့လာနိုင်ပြီး MM Developer Community အတွက်အကျိုးတစ်စုံတစ်ရာဖြစ်ထွန်းမယ် .. လေ့လာရလွယ်ကူလာမယ်ဆိုရင် ကျေနပ်ပါပြီ
 
@@ -27,3 +27,10 @@ Trae က ပထမတစ်လ subscription ကို 3$ ပဲယူပါတ�
 - Total Cost: 25$ or 8$ လောက်ကုန်နိုင်ပါတယ် ..
 - ဖော်ပြပါ ကုန်ကျစရိတ်တွေက လေ့လာမယ့် မိမိအတွက်သာဖြစ်ပါတယ် .. 
 - ကုန်ကျစရိတ်ထက် ဒီ Course ကိုလိုက်လုပ်ပြီး ပြန်ရမယ့် အသိက ပိုတန်မယ်လို့ အာမခံပါတယ်
+
+## System Setup
+- AI IDE (Cursor or TRAE) <must>နှင့်
+အောက်ဖော်ပြပါထဲက တစ်မျိုးရှိရင်ရပါပြီ <All Free>
+- Jupyter Notebook
+- PyCharm (Community Edition)
+- (or Any other python environment)
