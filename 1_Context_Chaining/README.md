@@ -119,7 +119,7 @@ duration_1 = end_time_1 - start_time_1
 - ရလာတဲ့ result ကို text file တစ်ခုအဖြစ်ထုတ်ပြီး သိမ်းထားတာဖြစ်ပါတယ်
 - gpt-5-nano model ရဲ့ ကြာချိန်ကိုမှတ်ထားတဲ့ timerတစ်ခုလည်းပါပါတယ်
 - Example(business_idea.txt):
-<img src="img2.png" alt="Example" width="400" />
+<img src="img2.png" alt="Example" width="700" />
 
 ### 5. Second Link in the Chain (Analysis & Solution)
 **Context Chaining ရဲ့ အရေးအကြီးဆုံးအပိုင်း**
@@ -148,7 +148,7 @@ with open("pain_point_&_solution.txt", "w", encoding="utf-8") as file:
 - code run ပြီးဖတ်ကြည့်လိုက်ရင် ပိုရှင်းသွားပါလိမ့်မယ်
 - ပထမ API call မှာ idea ထုတ်ခိုင်းတယ် ၊  အခု API callမှာ အဲ့ ideaကို အသုံးပြုပြီး pain point နဲ့ solution ကိုဆက်ထုတ်ခိုင်းတာပါ
 - Example(pain_point_&_solution.txt):
-<img src="img3.png" alt="Example" width="400" />
+<img src="img3.png" alt="Example" width="700" />
 
 ### 6. Performance Metrics
 ```python
