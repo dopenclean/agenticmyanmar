@@ -34,3 +34,6 @@ Trae က ပထမတစ်လ subscription ကို 3$ ပဲယူပါတ�
 - [Jupyter Notebook](https://www.anaconda.com/download)
 - [PyCharm (Community Edition)](https://www.jetbrains.com/pycharm/download/?section=windows)
 - (or Any other python environment)
+
+
+## Course Content
