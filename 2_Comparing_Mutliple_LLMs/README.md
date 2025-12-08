@@ -1,5 +1,5 @@
 # Comparing Multiple LLMs
-[FULL CODE](comparing_multiple_llms)
+[FULL CODE](/comparing_multiple_llms.py)
 
 ## Purpose
 **Comparing Multiple LLMs** is a method used to test and evaluate different Large Language Models against each other automatically.<br><br>
