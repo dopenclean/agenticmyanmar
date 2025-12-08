@@ -35,14 +35,8 @@ Trae က ပထမတစ်လ subscription ကို 3$ ပဲယူပါတ�
 
 ## System Setup with download links
 - AI IDE ([Cursor](https://cursor.com/download) or [TRAE](https://trae.ai/)) နှင့်<br>
-အောက်ဖော်ပြပါထဲက တစ်မျိုးရှိရင်ရပါပြီ <All Free>
 - [Jupyter Notebook](https://www.anaconda.com/download) (Recommended)
-- [PyCharm (Community Edition)](https://www.jetbrains.com/pycharm/download/?section=windows)
 - (or Any other python environment)
-
-## စာကြွင်း
-- Jupyter Notebook(.ipynb)က cellတစ်ခုချင်း runရတာဖြစ်ပြီး step by stepသွားတာ ပိုအဆင်ပြေပါတယ်
-- PyCharmထဲမှာ `.py` file သီးသန့်သုံးရင်တော့ scriptကြီးတစ်ခုလုံး run ချလိုက်ရတာဖြစ်လို့ နည်းနည်းကသိကအောက်ဖြစ်နေနိုင်ပါတယ်<br>PyCharmမှာက ipynb ကိုသုံးမယ်ဆို Pro Plan ဝယ်ရတာမို့လို့ပါ<br>PyCharm ကိုသေချာသုံးဖူးတယ်ဆိုရင်တော့ အဆင်ပြေမှာပါ
 
 
 ## Course Content
