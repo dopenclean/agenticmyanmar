@@ -46,5 +46,5 @@ Trae က ပထမတစ်လ subscription ကို 3$ ပဲယူပါတ�
 
 
 ## Course Content
-<a href="./1_Context_Chaining/README.md">1. Context Chaining</a>
-<a href="./2_Comparing_Mutliple_LLMs/README.md">2. Comparing Mutliple LLMs</a>
+<a href="./1_Context_Chaining/README.md">1. Context Chaining</a><br>
+<a href="./2_Comparing_Mutliple_LLMs/README.md">2. Comparing Mutliple LLMs</a><br>
