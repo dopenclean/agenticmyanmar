@@ -1,5 +1,4 @@
 # Comparing Multiple LLMs
-[FULL CODE .py](comparing_multiple_llms.py)
 [FULL CODE .ipynb](comparing_multiple_llms.ipynb)
 
 ## Purpose
